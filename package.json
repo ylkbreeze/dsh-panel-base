@@ -1,0 +1,46 @@
+{
+  "name": "dsh-panel-base",
+  "version": "1.0.0",
+  "description": "面板控制台基座：身份、工作状态、功能块、更多、设置，十四套皮肤（默认/科技屏/柔和/玻璃/暗夜/纸质/霓虹/终端/新拟物/报纸/像素/气泡/银河/炫彩）。功能由使用者往 modules 目录丢 JSON 挂上去，插件本身不带任何业务。",
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "lib",
+    "client.js",
+    "cordis.patch.yml",
+    "modules/*.json",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "panel",
+    "dashboard",
+    "base"
+  ],
+  "engines": {
+    "dsh": ">=0.2.1-rc.2"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout"
+      ]
+    }
+  }
+}

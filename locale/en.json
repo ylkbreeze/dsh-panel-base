@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Console",
+    "description": "A panel shell: identity, workload, feature tiles, More and Settings. Features are added by dropping a JSON file into the modules directory; the plugin itself carries no business logic."
+  }
+}

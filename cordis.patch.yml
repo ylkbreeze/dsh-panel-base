@@ -1,0 +1,15 @@
+# dsh-panel-base 的加载入口。
+- insert:
+    - id: panel-base
+      name: dsh-panel-base
+      config:
+        # 面板上显示的身份。装的人改这里——留空就显示「?」和「—」。
+        profile:
+          name: '你的名字'
+          gender: ''
+          birthday: ''
+        # 工作状态那两行。留空就显示「—」。
+        statusText: '在线'
+        loadText: '—'
+        # 备用：以后想从接口拿状态，填地址；现在只认固定文字。
+        statusUrl: ''

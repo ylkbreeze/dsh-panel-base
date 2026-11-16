@@ -1,0 +1,30 @@
+# 依赖
+node_modules/
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# 系统
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 日志与临时文件
+*.log
+*.tmp
+*.bak
+*.old
+*~
+
+# 你自己的本地模块（不想发出去的那种）
+# 想连示例一起发就注释掉这行
+# local-modules/
+
+# 私人配置
+settings.json
